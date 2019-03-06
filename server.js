@@ -28,6 +28,9 @@ res.render('welcome.hbs',{
     
 })
 });
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs');
+});
 app.get('/about',(req,res)=>{
     res.render('about.hbs', {
     pageTitle: 'this is the title',
